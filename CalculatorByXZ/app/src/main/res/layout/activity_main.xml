@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "First Value"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstvalue"
+        android:text="Plus"
+        android:onClick="PlusButtonClick"/>
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plus"
+        android:text="Minus" />
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minus"
+        android:text="Divide" />
+    <Button
+        android:id="@+id/scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide"
+        android:text = "Scale" />
+    <EditText
+        android:id="@+id/secondvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Second Value"
+        android:layout_below="@+id/scale"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:gravity="center"
+        android:layout_below="@+id/secondvalue"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"/>
+</android.widget.RelativeLayout>
