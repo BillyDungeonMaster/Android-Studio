@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeveralActivity</string>
+    <string name="splash">Заставка</string>
+    <string name="about">О программе</string>
+    <string name="main">Главный экран</string>
+    <string name="reference">Справка</string>
+</resources>
